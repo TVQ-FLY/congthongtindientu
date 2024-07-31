@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-full{
+    background-image: linear-gradient(white, #cee5f9);
+}
+
+.navbar{
+    background-color: #0f69c3;
+}
+
+/* ///////////////////////// */
+.list{
+    display: none;
+    width: 100px;
+    background-color: aliceblue;
+}
+.nav-item:hover .list{
+    display: block;
+    background-color: aliceblue;
+}
+
+/* /////////////////////////// */
+.icon-home-bg{
+    top: 0;
+    right: 0;
+    width: 23px;
+    height: 100%;
+    content: '';
+    border-radius: 0 0 0 100%;
+    background-color:  #0f69c3;
+}
+
