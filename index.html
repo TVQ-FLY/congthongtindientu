@@ -8,7 +8,11 @@
     <!-- Link icon -->
     <script src="https://kit.fontawesome.com/1ce1030c77.js" crossorigin="anonymous"></script>
     <!-- Link css slick -->
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      />
     <!-- Link Tailwindcss -->
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Cổng thông tin điện tử huyện Thạch Hà - tỉnh Hà Tĩnh</title>
@@ -171,16 +175,14 @@
 
                     <div class="hr-header"></div>
 
-                    <div class="wrapper relative flex mt-5 mb-5 items-center ">
-                        <i id="left" class="fa-solid fa-angle-left"></i>
-                        <div class="carousel flex  overflow-hidden h-[150px]">  
-                          <img src="Image/1_095332.jpg" alt="img" draggable="false">
-                          <img src="Image/2_095341.jpg" alt="img" draggable="false">
-                          <img src="Image/4_095353.jpg" alt="img" draggable="false">
-                          <img src="Image/5_095401.jpg" alt="img" draggable="false">
-                        </div>
-                        <i id="right" class="fa-solid fa-angle-right"></i>
-                      </div>
+                    <!-- Carousel-slide -->
+                    <div class="carousel">  
+                        <img src="Image/1_095332.jpg" alt="img" class="h-[150px] px-2" draggable="false">
+                        <img src="Image/2_095341.jpg" alt="img" class="h-[150px] px-2" draggable="false">
+                        <img src="Image/4_095353.jpg" alt="img" class="h-[150px] px-2" draggable="false">
+                        <img src="Image/5_095401.jpg" alt="img" class="h-[150px] px-2" draggable="false">
+                    </div>
+
                 </div>
 
                 <!-- Column right -->
@@ -194,6 +196,27 @@
 
     <!-- Link js -->
     <script src="main.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script>
+        $('.carousel').slick({
+            dots: false,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            centerMode: true,
+            variableWidth: true
+        });
+    </script>
 </body>
 </html>
