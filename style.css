@@ -107,9 +107,6 @@
     height: 150px;
 }
 
-.slick-slide{
-    /* width: 250px; */
-}
 
 .slick-prev{
     position: absolute;
@@ -121,7 +118,6 @@
     border-radius: 10%;
     z-index: 999;
     padding: 3px 10px;
-    /* opacity: 200%; */
 }
 
 .slick-next{
@@ -134,5 +130,16 @@
     border-radius: 10%;
     z-index: 999;
     padding: 3px 10px;
-    /* opacity: 200%; */
+}
+
+
+.text-slide{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 34px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 12px;
 }
