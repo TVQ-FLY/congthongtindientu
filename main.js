@@ -36,6 +36,6 @@ rightContents.forEach((content, index) => {
 let autoSwitch = setInterval(() => {
     currentIndex = (currentIndex + 1) % contentArray.length;
     updateMainContent(currentIndex);
-}, 2000);
+}, 3000);
 
 

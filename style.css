@@ -98,3 +98,41 @@
 .active {
     color: rgb(255, 102, 0);
 }
+
+
+/* Slick  */
+
+.carousel img{
+    width: 225px;
+    height: 150px;
+}
+
+.slick-slide{
+    /* width: 250px; */
+}
+
+.slick-prev{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    background-color: rgb(107, 107, 117);
+    color: #ffffff;
+    border-radius: 10%;
+    z-index: 999;
+    padding: 3px 10px;
+    /* opacity: 200%; */
+}
+
+.slick-next{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: rgb(107, 107, 117);
+    color: #ffffff;
+    border-radius: 10%;
+    z-index: 999;
+    padding: 3px 10px;
+    /* opacity: 200%; */
+}

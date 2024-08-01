@@ -176,11 +176,11 @@
                     <div class="hr-header"></div>
 
                     <!-- Carousel-slide -->
-                    <div class="carousel">  
-                        <img src="Image/1_095332.jpg" alt="img" class="h-[150px] px-2" draggable="false">
-                        <img src="Image/2_095341.jpg" alt="img" class="h-[150px] px-2" draggable="false">
-                        <img src="Image/4_095353.jpg" alt="img" class="h-[150px] px-2" draggable="false">
-                        <img src="Image/5_095401.jpg" alt="img" class="h-[150px] px-2" draggable="false">
+                    <div class="carousel my-3">  
+                        <img src="Image/1_095332.jpg" alt="img" class="px-1">
+                        <img src="Image/2_095341.jpg" alt="img" class="px-1">
+                        <img src="Image/4_095353.jpg" alt="img" class="px-1">
+                        <img src="Image/5_095401.jpg" alt="img" class="px-1">
                     </div>
 
                 </div>
@@ -210,12 +210,11 @@
     ></script>
     <script>
         $('.carousel').slick({
-            dots: false,
-            infinite: true,
-            speed: 300,
-            slidesToShow: 1,
-            centerMode: true,
-            variableWidth: true
+            variableWidth: true,
+            speed: 1000,
+            slidesToShow: 3,
+            prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fas fa-arrow-left' aria-hidden='true'></i></button>",
+            nextArrow:"<button type='button' class='slick-next pull-right'><i class='fas fa-arrow-right' aria-hidden='true'></i></button>"
         });
     </script>
 </body>
