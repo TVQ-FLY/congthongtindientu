@@ -37,3 +37,15 @@ let autoSwitch = setInterval(() => {
     currentIndex = (currentIndex + 1) % contentArray.length;
     updateMainContent(currentIndex);
 }, 2000);
+
+
+// Next Image
+
+$('.carousel').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    centerMode: true,
+    variableWidth: true
+  });

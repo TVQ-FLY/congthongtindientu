@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <!-- Link icon -->
     <script src="https://kit.fontawesome.com/1ce1030c77.js" crossorigin="anonymous"></script>
+    <!-- Link css slick -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <!-- Link Tailwindcss -->
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Cổng thông tin điện tử huyện Thạch Hà - tỉnh Hà Tĩnh</title>
@@ -157,12 +159,31 @@
                     </div>
 
                     <!-- Title-header -->
-                    <div class="header-content flex w-[200px] items-center relative">
-                        <img src="Image/bg-title.png" alt="">
-                        <p class="font-bold text-white uppercase text-[16px]">Ảnh hoạt động</p>
-                        <div class="bg-content absolute left-[200px]"></div>
+                    <div class="hi">
+                        <div class="header-content flex w-[200px] items-center relative">
+                            <img src="Image/bg-title.png" alt="">
+                            <p class="font-bold text-white uppercase text-[16px]">Ảnh hoạt động</p>
+                            <div class="bg-content absolute left-[200px]"></div>
+                        </div>
+
                     </div>
+
                     <div class="hr-header"></div>
+
+                    <div class="wrapper relative flex mt-5 mb-5 items-center ">
+                        <i id="left" class="fa-solid fa-angle-left"></i>
+                        <div class="carousel flex  overflow-hidden h-[150px]">  
+                          <img src="d.jpg" alt="img" draggable="false">
+                          <img src="d1.jpg" alt="img" draggable="false">
+                          <img src="d2.jpg" alt="img" draggable="false">
+                          <img src="d3.jpg" alt="img" draggable="false">
+                          <img src="d4.jpg" alt="img" draggable="false">
+                          <img src="d5.jpg" alt="img" draggable="false">
+                          <img src="d6.jpg" alt="img" draggable="false">
+                          <img src="d7.jpg" alt="img" draggable="false">
+                        </div>
+                        <i id="right" class="fa-solid fa-angle-right"></i>
+                      </div>
                 </div>
 
                 <!-- Column right -->
@@ -176,5 +197,6 @@
 
     <!-- Link js -->
     <script src="main.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </body>
 </html>

@@ -8,6 +8,11 @@
     background-image: linear-gradient(white, #cee5f9);
 }
 
+.container-content{
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.18);
+
+}
+
 .navbar{
     background-color: #0f69c3;
 }
@@ -58,6 +63,8 @@
 
 .bg-content{
     left: 170px;
+    top: 0px;
+    bottom: 0px;
     border-color: rgba(136, 183, 213, 0);
     border-left: 26px solid #0f69c3;
     border-width: 22px;
@@ -84,6 +91,66 @@
 .right-content:hover, .active {
     background-color: #ffffff;
 }
+
 .active {
     color: rgb(255, 102, 0);
 }
+
+.hi{
+    background-image: url(Image/sd_bordertop.png);
+}
+
+
+.wrapper i{
+    top: 50%;
+    height: 44px;
+    width: 44px;
+    color: #343F4F;
+    cursor: pointer;
+    font-size: 1.15rem;
+    position: absolute;
+    text-align: center;
+    line-height: 44px;
+    background: #fff;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+  }
+  .wrapper i:active{
+    transform: translateY(-50%) scale(0.9);
+  }
+  .wrapper i:hover{
+    background: #f2f2f2;
+  }
+  .wrapper i:first-child{
+    left: -22px;
+    /* display: none; */
+  }
+  .wrapper i:last-child{
+    right: -22px;
+  }
+  .wrapper .carousel{
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+  }
+  .carousel.dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+  }
+  .carousel.dragging img{
+    pointer-events: none;
+  }
+  .carousel img{
+    /* width: 200px; */
+    height: 340px;
+    object-fit: cover;
+    user-select: none;
+    margin-left: 14px;
+    width: calc(100% / 4);
+  }
+  .carousel img:first-child{
+    margin-left: 0px;
+  }
