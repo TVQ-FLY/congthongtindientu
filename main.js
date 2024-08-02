@@ -39,6 +39,23 @@ let autoSwitch = setInterval(() => {
 }, 3000);
 
 
+// Lấy tất cả các phần tử có class 'hoverDiv'
+const divElements = document.querySelectorAll('.hoverDiv');
+
+// Lặp qua mỗi phần tử và thêm sự kiện 'mouseenter' và 'mouseleave'
+divElements.forEach((div) => {
+    div.addEventListener('mouseenter', () => {
+        div.classList.add('hovered');
+    });
+
+    div.addEventListener('mouseleave', () => {
+        div.classList.remove('hovered');
+    });
+});
+
+
+
+
 // Date time colum right 
 function displayDateTime() {
     const now = new Date();
@@ -53,10 +70,6 @@ function displayDateTime() {
     const timeStr = now.toLocaleTimeString('vi-VN', {hour12: true});
 
     document.getElementById('dateTime').innerHTML = `Thứ ${dayNumber}, Ngày ${dateStr}, ${timeStr}`;
-    console.log(dayNumber)
-    console.log(dateStr)
-    console.log(timeStr)
-    
 }
 
 // Gọi hàm lần đầu để hiển thị ngay lập tức

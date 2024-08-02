@@ -80,6 +80,23 @@
     border-bottom: 1px solid #d71a21;
 }
 
+/* Khởi tạo các div không có gạch chân và màu mặc định */
+.hoverDiv {
+    text-decoration: none;
+}
+
+/* Khi hover vào, chỉ thêm gạch chân */
+.underlineOnly.hovered {
+    text-decoration: underline;
+}
+
+/* Khi hover vào, thêm gạch chân và đổi màu chữ */
+.underlineAndColor.hovered {
+    text-decoration: underline;
+    color: blue; /* Màu chữ khi hover */
+}
+
+
 .left-column h3{
     font-size: 16px;
     font-weight: 500;
@@ -136,12 +153,13 @@
 .text-slide{
     font-size: 16px;
     font-weight: 500;
-    line-height: 34px;
+    line-height: 24px;
+    height: 72px;
+    display: block;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    margin-bottom: 12px;
 }
 
 .address a::before{
