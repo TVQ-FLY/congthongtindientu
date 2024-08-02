@@ -180,8 +180,7 @@
 
 .notification{
     background-position: center;
-    background-repeat: no-repeat;
-    background-size: 400%;
+    background-size: 700%;
     background-image: url(Image/bg-widget.png);
 }
 
@@ -287,6 +286,9 @@ a.icon-marquee{
 /* Footer  */
 .footer-full{
     background-color: #0f69c3;
+    background-image: url(Image/bg-widget.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .footer-full img{
