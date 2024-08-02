@@ -198,17 +198,17 @@
 
 
 /* Scrollbar */
-::-webkit-scrollbar {
+.custom-scrollbar::-webkit-scrollbar {
     width: 5px;
     border: 1px solid #d5d5d5;
 }
 
-::-webkit-scrollbar-track {
+.custom-scrollbar::-webkit-scrollbar-track {
     border-radius: 0;
     background: #eeeeee;
 }
 
-::-webkit-scrollbar-thumb {
+.custom-scrollbar::-webkit-scrollbar-thumb {
     border-radius: 0;
     background: #c4c2c2;
 }
