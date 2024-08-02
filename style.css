@@ -176,7 +176,7 @@
 .notification{
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 300%;
+    background-size: 400%;
     background-image: url(Image/bg-widget.png);
 }
 
@@ -207,4 +207,44 @@
 ::-webkit-scrollbar-thumb {
     border-radius: 0;
     background: #c4c2c2;
+}
+
+/* Marquee */
+.marquee-container {
+    width: 100%; /* Độ rộng của container */
+    height: 200px; /* Độ cao của container */
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #ccc;
+}
+
+.marquee-content {
+    position: absolute;
+    bottom: -100%; /* Bắt đầu từ ngoài khung nhìn */
+    animation: marquee 20s linear infinite; /* Thời gian chạy là 10 giây */
+}
+
+.marquee-content:hover {
+    animation-play-state: paused; /* Dừng animation khi hover */
+    color: rgb(255, 128, 0);
+}
+
+@keyframes marquee {
+    from {
+        bottom: -100%; /* Bắt đầu từ dưới khung nhìn */
+    }
+    to {
+        bottom: 100%; /* Kết thúc ở trên khung nhìn */
+    }
+}
+
+a.icon-marquee{
+    background: url(Image/hv-more-news.jpg) no-repeat;
+    background-position: 0px 8px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    text-align: justify;
 }
