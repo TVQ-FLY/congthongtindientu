@@ -174,9 +174,10 @@
 /* Column right */
 
 .notification{
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: 300%;
     background-image: url(Image/bg-widget.png);
-    position: center center;
 }
 
 .header-table a::before{
@@ -189,6 +190,8 @@
     margin: 6px 10px 6px 5px;
     text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.3);
 }
+
+
 
 /* Scrollbar */
 ::-webkit-scrollbar {
