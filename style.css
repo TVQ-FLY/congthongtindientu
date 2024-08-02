@@ -85,6 +85,10 @@
     border-bottom: 1px solid #d71a21;
 }
 
+.full-music{
+    display: none;
+}
+
 /* Khởi tạo các div không có gạch chân và màu mặc định */
 .hoverDiv {
     text-decoration: none;
