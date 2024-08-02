@@ -46,16 +46,17 @@ function displayDateTime() {
     const options = { 
         year: 'numeric', 
         month: 'numeric', 
-        day: 'numeric',
-        hour: '2-digit', 
-        minute: '2-digit', 
-        second: '2-digit', 
-        hour12: true
+        day: 'numeric', 
+        hour12: false
     };
     const dateStr = now.toLocaleDateString('vi-VN', options);
     const timeStr = now.toLocaleTimeString('vi-VN', {hour12: true});
 
-    document.getElementById('dateTime').innerHTML = `Thứ ${dayNumber}, ${dateStr}, ${timeStr} PM`;
+    document.getElementById('dateTime').innerHTML = `Thứ ${dayNumber}, Ngày ${dateStr}, ${timeStr}`;
+    console.log(dayNumber)
+    console.log(dateStr)
+    console.log(timeStr)
+    
 }
 
 // Gọi hàm lần đầu để hiển thị ngay lập tức
