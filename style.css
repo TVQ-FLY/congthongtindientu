@@ -64,6 +64,11 @@
     background-color: #0f69c3;
 }
 
+.header-content.active {
+    background-color: #20254f; /* Màu khi nút được chọn */
+    color: white; /* Màu chữ khi nút được chọn */
+}
+
 .bg-content{
     left: 170px;
     top: 0px;

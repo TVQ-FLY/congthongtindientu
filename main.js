@@ -72,15 +72,12 @@ function displayDateTime() {
     document.getElementById('dateTime').innerHTML = `Thứ ${dayNumber}, Ngày ${dateStr}, ${timeStr}`;
 }
 
-// Gọi hàm lần đầu để hiển thị ngay lập tức
 displayDateTime();
-
-// Cập nhật thời gian mỗi giây
 setInterval(displayDateTime, 1000);
 
 
 // video youtube music
-function openCity(evt, cityName) {
+function openCity(evt, play) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
@@ -90,6 +87,6 @@ function openCity(evt, cityName) {
     for (i = 0; i < tablinks.length; i++) {
       tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
-    document.getElementById(cityName).style.display = "block";
+    document.getElementById(play).style.display = "block";
     evt.currentTarget.className += " active";
   }

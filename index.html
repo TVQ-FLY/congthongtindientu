@@ -691,7 +691,7 @@
                                 <a href="" class="text-white font-bold pl-3">Công khai minh bạch thông tin</a>
                             </div>
                             <div class="content-table max-h-[500px] overflow-hidden overflow-y-auto">
-                                <div class="ml-2 py-2 my-3 mx-2 border-b-2 border-dashed border-gray-400 hover:text-red-500 hover:border-red-500">
+                                <div class="ml-2 py-2 mx-2 border-b-2 border-dashed border-gray-400 hover:text-red-500 hover:border-red-500">
                                     <a href="" class="">Công khai ngân sách Văn phòng HĐND-UBND huyện</a>
                                 </div>
                                 <div class="ml-2 py-2 mx-2 border-b-2 border-dashed border-gray-400 hover:text-red-500 hover:border-red-500">
@@ -935,18 +935,18 @@
 
                          <!-- Title-header -->
                          <div class="box-header mt-5 flex">
-                            <div class="header-content flex items-center relative px-2 hover:bg-cyan-900">
+                            <div class="header-content flex items-center relative px-2 hover:bg-cyan-900 tablinks border-gray-400" onclick="openCity(event, 'truyenhinh')">
                                 <img src="Image/ic-TV.png" alt="">
                                 <p class="font-bold text-white uppercase text-[16px] pl-2 hover:text-yellow-300">Truyền hình</p>
                             </div>
-                            <div class="header-content flex items-center relative px-3 hover:bg-cyan-900">
+                            <div class="header-content flex items-center relative px-3 hover:bg-cyan-900 tablinks border-gray-400" onclick="openCity(event, 'phatthanh')">
                                 <img src="Image/ic-radio.png" alt="">
                                 <p class="font-bold text-white uppercase text-[16px] pl-2 hover:text-yellow-300">Phát thanh thạch hà</p>
                             </div>
                         </div>
                         <div class="hr-header mb-2"></div>
 
-                        <div class="full-video">
+                        <div class="full-video tabcontent" id="truyenhinh">
                             <div class="video-content max-h-[250px]">
                                 <iframe width="100%" height="220px" src="https://www.youtube.com/embed/VA3urj3CXlI?si=SONNwqnO_Jhw4m1m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             </div>
@@ -985,7 +985,66 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="full-music tabcontent" id="phatthanh">
+
+
+                        </div>
+                        <div class="next text-center my-2 hover:text-blue-500 hover:underline">Xem thêm</div>
+                        <img src="Image/BN TDKT_031602.png" alt="" class="w-full my-2">
+                        <img src="Image/lct.jpg" alt="" class="w-full my-2">
+                        <img src="Image/GIAI QUYET KNTC_025710.png" alt="" class="w-full my-2">
+                        <img src="Image/mail.jpg" alt="" class="w-full my-2">
+                        <img src="Image/BN1 DGCBCC_025233.png" alt="" class="w-full my-2">
+                        <img src="Image/DU lich_AhUB7fYWY0QrFcpT.png" alt="" class="w-full my-2">
+                        <img src="Image/cuoc-thi-atgt-2022_090032.jpg" alt="" class="w-full my-2">
                     
+                         <!-- Title-header -->
+                         <div class="box-header mt-5">
+                            <div class="header-content flex w-[275px] items-center relative">
+                                <img src="Image/bg-title.png" alt="">
+                                <p class="font-bold text-white uppercase text-[16px]">Bản đồ huyện thạch hà</p>
+                                <div class="bg-content absolute left-[275px]"></div>
+                            </div>
+                        </div>
+                        <div class="hr-header mb-2"></div>
+
+                        <!-- Content Header -->
+                        <div class=" max-h-[320px] bg-slate-200 p-4 overflow-hidden">
+                            <div class="text-center bg-white">
+                                <img src="Image/map.jpg" alt="" class="w-full">
+                            </div>
+                        </div>
+
+                          <!-- Title-header -->
+                          <div class="box-header mt-5">
+                            <div class="header-content flex w-[300px] items-center relative">
+                                <img src="Image/bg-title.png" alt="">
+                                <p class="font-bold text-white uppercase text-[16px]">Tình hình giải quyết hồ sơ</p>
+                                <div class="bg-content absolute left-[300px]"></div>
+                            </div>
+                        </div>
+                        <div class="hr-header mb-2"></div>
+
+                        <!-- Content Header -->
+                        <div class=" max-h-[235px] bg-slate-200 p-4 overflow-hidden">
+                            <div class="text-center bg-white p-3">
+                                <p class="font-bold text-sm">Đến tháng 8 UBND Huyện Thạch Hà đã giải quyết</p>
+                                <p class="number text-red-500 font-bold text-4xl my-2">91.85%</p>
+                                <p class="font-bold text-blue-900 text-xs">hồ sơ đúng hạn</p>
+                                <span class="text-xs font-bold text-blue-900">(tự động cập nhật vào lúc 12:00:00 02/08/2024)</span>
+                            </div>
+                        </div>
+
+                         <!-- Title-header -->
+                         <div class="box-header mt-5">
+                            <div class="header-content flex w-[190px] items-center relative">
+                                <img src="Image/bg-title.png" alt="">
+                                <p class="font-bold text-white uppercase text-[16px]">Thư viện ảnh</p>
+                                <div class="bg-content absolute left-[190px]"></div>
+                            </div>
+                        </div>
+                        <div class="hr-header mb-2"></div>
                     </div>
                 </div>
             </div>
