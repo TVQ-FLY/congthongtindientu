@@ -294,3 +294,8 @@ a.icon-marquee{
 .footer-full img{
     margin: auto;
 }
+
+.up{
+    bottom: 10px;
+    right: 10px
+}
