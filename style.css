@@ -170,3 +170,38 @@
     height: 10px;
     margin: 4px 10px 0px 0px;
 }
+
+/* Column right */
+
+.notification{
+    background-repeat: no-repeat;
+    background-image: url(Image/bg-widget.png);
+    position: center center;
+}
+
+.header-table a::before{
+    content: "\f0a3";
+    color: #ffffff;
+    font: normal normal normal 12px / 1 FontAwesome;
+    float: left;
+    width: 10px;
+    height: 10px;
+    margin: 6px 10px 6px 5px;
+    text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.3);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 5px;
+    border: 1px solid #d5d5d5;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 0;
+    background: #eeeeee;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 0;
+    background: #c4c2c2;
+}
