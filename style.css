@@ -293,6 +293,7 @@ a.icon-marquee{
     background-image: url(Image/bg-widget.png);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 50%;
 }
 
 .footer-full img{
