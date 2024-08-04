@@ -109,3 +109,12 @@ window.onscroll = function() {
 scrollToTopBtn.onclick = function() {
   window.scrollTo({top: 0, behavior: 'smooth'});
 };
+
+
+// Responsive
+const btnOpen = document.querySelector('.open-menu');
+const menu = document.querySelector('.nav-item-responsive');
+
+btnOpen.onclick = () =>{
+    menu.classList.toggle('hidden');
+}

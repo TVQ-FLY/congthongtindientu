@@ -55,6 +55,16 @@
     background-color: rgb(255, 255, 255);
 }
 
+/* Hover navbar responsive */
+.list-responsive:hover .bg-slate-300 {
+    color: yellow; /* Đổi màu chữ của "Giới thiệu" thành màu đỏ khi hover */
+}
+
+.list-responsive li:hover {
+    color: red; /* Đổi nền của <li> thành màu vàng khi hover */
+    background-color: #c9c6c6;
+}
+
 /* Content */
 .box-header{
     background-image: url(Image/sd_bordertop.png);
@@ -304,3 +314,5 @@ a.icon-marquee{
     bottom: 10px;
     right: 10px
 }
+
+

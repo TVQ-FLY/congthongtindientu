@@ -4,14 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Link css -->
-    <link rel="stylesheet" href="style.css">
     <!-- Link icon -->
     <script src="https://kit.fontawesome.com/1ce1030c77.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <!-- Link css slick -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <!-- Link Tailwindcss -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Link css -->
+    <link rel="stylesheet" href="style.css">
 
     <title>Cổng thông tin điện tử huyện Thạch Hà - tỉnh Hà Tĩnh</title>
 </head>
@@ -26,14 +27,14 @@
             </div>
 
             <!-- Navbar -->
-            <div class="navbar flex justify-between items-center text-md">
+            <div class="navbar flex justify-between items-center text-md relative">
                 <div class="home-navbar relative w-[75px]">
-                    <i class="icon-home fa-solid fa-house text-white bg-red-600 py-4 pl-4 pr-[40px]"></i>
-                    <div class="icon-home-bg absolute"></div>
+                    <i class="icon-home fa-solid fa-house text-white bg-red-600 py-4 pl-4 pr-[20px] sm:pr-[40px]"></i>
+                    <div class="icon-home-bg absolute hidden sm:flex"></div>
                 </div>
 
-                <div class="nav-item relative py-3">
-                    <a href="" class="button-navbar uppercase text-white font-bold p-3">Giới thiệu</a>
+                <div class="nav-item relative">
+                    <a href="" class="button-navbar uppercase text-white font-bold p-3 hidden lg:block">Giới thiệu</a>
                     <ul class="list absolute mt-3 font-bold px-3">
                         <li><a href="">Sự hình thành và phát triển</a></li>
                         <li><a href="">Sơ đồ, cơ cấu tổ chức</a></li>
@@ -42,9 +43,8 @@
                         <li><a href="">Thông tin về nhiệm vụ đảm nhiệm của lãnh đạo cơ quan</a></li>
                         <li><a href="">Chức năng nhiệm vụ đơn vị trực thuộc</a></li>
                     </ul>
-
                 </div>
-                <div class="nav-item py-3">
+                <div class="nav-item py-3 hidden lg:block">
                     <a href="" class="button-navbar uppercase text-white font-bold p-3">Tin tức - Sự kiện</a>
                     <ul class="list absolute mt-3 font-bold px-3">
                         <li><a href="">Chính trị - Kinh tế</a></li>
@@ -56,7 +56,7 @@
                         <li><a href="">Cải cách hành chính</a></li>
                     </ul>
                 </div>
-                <div class="nav-item py-3">
+                <div class="nav-item py-3 hidden lg:block">
                     <a href="" class="button-navbar uppercase text-white font-bold p-3">Dịch vụ công</a>
                     <ul class="list absolute mt-3 font-bold px-3">
                         <li><a href="">DVC mức 1</a></li>
@@ -65,7 +65,7 @@
                         <li><a href="">Báo cáo thống kê tình hình tiếp nhận hồ sơ</a></li>
                     </ul>
                 </div>
-                <div class="nav-item py-3">
+                <div class="nav-item py-3 hidden lg:block">
                     <a href="" class="button-navbar uppercase text-white font-bold p-3">Công dân</a>
                     <ul class="list absolute mt-3 font-bold px-3">
                         <li><a href="">Công bố các Quyết định TTHC</a></li>
@@ -76,7 +76,7 @@
                         <li><a href="">Kết quả hồ sơ một cửa</a></li>
                     </ul>
                 </div>
-                <div class="nav-item py-3">
+                <div class="nav-item py-3 hidden lg:block">
                     <a href="" class="button-navbar uppercase text-white font-bold p-3">Doanh nghiệp</a>
                     <ul class="list absolute mt-3 font-bold px-3">
                         <li><a href="">Cơ hội đầu tư</a></li>
@@ -84,10 +84,10 @@
                         <li><a href="">Hỗ trợ doanh nghiệp</a></li>
                     </ul>
                 </div>
-                <div class="nav-item py-3">
+                <div class="nav-item py-3 hidden lg:block">
                     <a href="" class="button-navbar uppercase text-white font-bold p-3">Phản ánh - Kiến nghị</a>
                 </div>
-                <div class="nav-item py-3">
+                <div class="nav-item py-3 hidden lg:block">
                     <a href="" class="button-navbar uppercase text-white font-bold p-3">Thạch hà đất và người</a>
                     <ul class="list absolute mt-3 font-bold px-3">
                         <li><a href="">Du lịch Thạch Hà</a></li>
@@ -98,7 +98,7 @@
                         <li><a href="">Nhà hàng quán ăn</a></li>
                     </ul>
                 </div>
-                <div class="nav-item py-3">
+                <div class="nav-item py-3 hidden lg:block">
                     <a href="" class="button-navbar uppercase text-white font-bold p-3">Liên hệ</a>
                     <ul class="list absolute mt-3 font-bold px-3">
                         <li><a href="">Đường dây nóng</a></li>
@@ -109,9 +109,92 @@
                         <li><a href="">Quản trị kỹ thuật cổng TTĐT,DVC trực tuyến</a></li>
                     </ul>
                 </div>
-                <i class="fa-solid fa-magnifying-glass text-white bg-red-600 p-4 cursor-pointer"></i>
+                <div class="icon-navbar flex">
+                    <!-- Icon search -->
+                    <i class="fa-solid fa-magnifying-glass text-white bg-red-600 p-4 cursor-pointer"></i>
+                    <!-- Icon list -->
+                    <div class="bx bx-menu bg-red-600 ml-1 p-2 text-white text-3xl open-menu block lg:hidden"></div>
+                </div>
             </div>
 
+            <div class="nav-item-responsive absolute z-[999] bg-white w-full hidden">
+                <div class="list-responsive">
+                    <div class="bg-slate-300 pl-2 py-2 font-bold uppercase border-2 border-t-slate-400">Giới thiệu</div>
+                    <ul class="">
+                        <li class="pl-2 py-2"><a href="">Sự hình thành và phát triển</a></li>
+                        <li class="pl-2 py-2"><a href="">Sơ đồ, cơ cấu tổ chức</a></li>
+                        <li class="pl-2 py-2"><a href="">Chức năng nhiệm vụ phòng chuyên môn</a></li>
+                        <li class="pl-2 py-2"><a href="">Thông tin lãnh đạo Chính quyền</a></li>
+                        <li class="pl-2 py-2"><a href="">Thông tin về nhiệm vụ đảm nhiệm của lãnh đạo cơ quan</a></li>
+                        <li class="pl-2 py-2"><a href="">Chức năng nhiệm vụ đơn vị trực thuộc</a></li>
+                    </ul>
+                </div>
+                <div class="list-responsive">
+                    <div class="bg-slate-300 pl-2 py-2 font-bold uppercase border-2 border-t-slate-400">Tin tức - Sự kiện</div>
+                    <ul class="">
+                        <li class="pl-2 py-2"><a href="">Chính trị - Kinh tế</a></li>
+                        <li class="pl-2 py-2"><a href="">Quốc phòng - An ninh</a></li>
+                        <li class="pl-2 py-2"><a href="">Giáo dục - Y tế</a></li>
+                        <li class="pl-2 py-2"><a href="">Văn hóa, xã hội và môi trường</a></li>
+                        <li class="pl-2 py-2"><a href="">Nông thôn mới</a></li>
+                        <li class="pl-2 py-2"><a href="">Thông tin tuyên truyền</a></li>
+                        <li class="pl-2 py-2"><a href="">Cải cách hành chính</a></li>
+                    </ul>
+                </div>
+                <div class="list-responsive">
+                    <div class="bg-slate-300 pl-2 py-2 font-bold uppercase border-2 border-t-slate-400">Dịch vụ công</div>
+                    <ul class="">
+                        <li class="pl-2 py-2"><a href="">DVC mức 1</a></li>
+                        <li class="pl-2 py-2"><a href="">DVC mức 2</a></li>
+                        <li class="pl-2 py-2"><a href="">DVC mức 3,4</a></li>
+                        <li class="pl-2 py-2"><a href="">Báo cáo thống kê tình hình tiếp nhận hồ sơ</a></li>
+                    </ul>
+                </div>
+                <div class="list-responsive">
+                    <div class="bg-slate-300 pl-2 py-2 font-bold uppercase border-2 border-t-slate-400">Công dân</div>
+                    <ul class="">
+                        <li class="pl-2 py-2"><a href="">Công bố các Quyết định TTHC</a></li>
+                        <li class="pl-2 py-2"><a href="">Niêm yết, công khai TTHC lĩnh vực Tư pháp</a></li>
+                        <li class="pl-2 py-2"><a href="">Bưu chính công ích</a></li>
+                        <li class="pl-2 py-2"><a href="">Thủ tục hành chính</a></li>
+                        <li class="pl-2 py-2"><a href="">Dịch vụ công trực tuyến</a></li>
+                        <li class="pl-2 py-2"><a href="">Kết quả hồ sơ một cửa</a></li>
+                    </ul>
+                </div>
+                <div class="list-responsive">
+                    <div class="bg-slate-300 pl-2 py-2 font-bold uppercase border-2 border-t-slate-400">Doanh nghiệp</div>
+                    <ul class="">
+                        <li class="pl-2 py-2"><a href="">Cơ hội đầu tư</a></li>
+                        <li class="pl-2 py-2"><a href="">Dự án đầu tư xây dựng</a></li>
+                        <li class="pl-2 py-2"><a href="">Hỗ trợ doanh nghiệp</a></li>
+                    </ul>
+                </div>
+                <div class="list-responsive">
+                    <div class="bg-slate-300 pl-2 py-2 font-bold uppercase border-2 border-t-slate-400">Phản ánh - Kiến nghị</div>
+                </div>
+                <div class="list-responsive">
+                    <div class="bg-slate-300 pl-2 py-2 font-bold uppercase border-2 border-t-slate-400">Thạch hà đất và người</div>
+                    <ul class="">
+                        <li class="pl-2 py-2"><a href="">Du lịch Thạch Hà</a></li>
+                        <li class="pl-2 py-2"><a href="">Làng nghề, lễ hội</a></li>
+                        <li class="pl-2 py-2"><a href="">Truyền thống văn hóa</a></li>
+                        <li class="pl-2 py-2"><a href="">Danh lam, thắng cảnh, Di tích LSVH</a></li>
+                        <li class="pl-2 py-2"><a href="">Thông tin về nhiệm vụ đảm nhiệm của lãnh đạo cơ quan</a></li>
+                        <li class="pl-2 py-2"><a href="">Nhà hàng quán ăn</a></li>
+                    </ul>
+                </div>
+                <div class="list-responsive">
+                    <div class="bg-slate-300 pl-2 py-2 font-bold uppercase border-2 border-t-slate-400">Liên hệ</div>
+                    <ul class="">
+                        <li class="pl-2 py-2"><a href="">Đường dây nóng</a></li>
+                        <li class="pl-2 py-2"><a href="">Danh bạ điện thoại và Email</a></li>
+                        <li class="pl-2 py-2"><a href="">Danh sách người phát ngôn</a></li>
+                        <li class="pl-2 py-2"><a href="">Quản trị và biên tập Website</a></li>
+                        <li class="pl-2 py-2"><a href="">Thông tin giao dịch chính thức</a></li>
+                        <li class="pl-2 py-2"><a href="">Quản trị kỹ thuật cổng TTĐT,DVC trực tuyến</a></li>
+                    </ul>
+                </div>
+            </div>
             <!-- Content -->
             <div class="content mt-[30px] grid grid-cols-12 gap-4 px-[10px] bg-white">
                 <!-- Column left -->
@@ -128,7 +211,7 @@
                     <div class="hr-header"></div>
 
                     <!-- Content-header -->
-                    <div class="grid grid-cols-2 gap-4 min-h-[500px] overflow-hidden">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 min-h-[500px] overflow-hidden">
                         <div class="left-column mt-2">
                             <img id="main-image"
                                 src="Image/453604035_462544646702984_3189287094758171908_n_tWGSgkvSUCFQpSaM_jpg.jpg"
@@ -222,8 +305,8 @@
                     <div class="hr-header"></div>
 
                     <!-- Content-header -->
-                    <div class="grid grid-cols-12 gap-4 h-[450px] my-3 overflow-hidden">
-                        <div class="left-column col-span-6">
+                    <div class="grid grid-cols-12 gap-4 min-h-[450px] my-3 overflow-hidden">
+                        <div class="left-column col-span-12 sm:col-span-6">
                             <img src="Image/IMG_1833_e4D7izG25kyS7EJq_jpg.jpg" alt=""
                                 style="width: 100%; height: 250px; object-fit: cover">
                             <h2 class="text-lg mt-2 font-bold hoverDiv underlineAndColor">Chúc mừng Ban Tuyên giáo Huyện
@@ -233,7 +316,7 @@
                                 huyện Thạch Hà (Hà Tĩnh) đã đến tặng hoa chúc mừng Ban Tuyên giáo Huyện ủy.</h3>
                             <p class="text-right text-slate-400 font-bold">- 01/08/2024 -</p>
                         </div>
-                        <div class="right-column col-span-6">
+                        <div class="right-column col-span-12 sm:col-span-6">
                             <div class="grid grid-cols-12 gap-4 mb-2">
                                 <div class="col-span-4">
                                     <img src="Image/453096766_7439413512824748_7069472343419988729_n_KPrWxeFYr0uq7I2n.jpg"
@@ -297,8 +380,8 @@
                     <div class="hr-header"></div>
 
                     <!-- Content-header -->
-                    <div class="grid grid-cols-12 gap-4 h-[450px] my-3 overflow-hidden">
-                        <div class="left-column col-span-6">
+                    <div class="grid grid-cols-12 gap-4 min-h-[450px] my-3 overflow-hidden">
+                        <div class="left-column col-span-12 sm:col-span-6">
                             <img src="Image/IMG_1833_e4D7izG25kyS7EJq_jpg.jpg" alt=""
                                 style="width: 100%; height: 250px; object-fit: cover">
                             <h2 class="hoverDiv underlineAndColor text-lg mt-2 font-bold">Chúc mừng Ban Tuyên giáo Huyện
@@ -308,7 +391,7 @@
                                 huyện Thạch Hà (Hà Tĩnh) đã đến tặng hoa chúc mừng Ban Tuyên giáo Huyện ủy.</h3>
                             <p class="text-right text-slate-400 font-bold">- 01/08/2024 -</p>
                         </div>
-                        <div class="right-column col-span-6">
+                        <div class="right-column col-span-12 sm:col-span-6">
                             <div class="grid grid-cols-12 gap-4 mb-2">
                                 <div class="col-span-4">
                                     <img src="Image/453096766_7439413512824748_7069472343419988729_n_KPrWxeFYr0uq7I2n.jpg"
@@ -369,8 +452,8 @@
                     <div class="hr-header"></div>
 
                     <!-- Content-header -->
-                    <div class="grid grid-cols-12 gap-4 h-[450px] my-3 overflow-hidden">
-                        <div class="left-column col-span-6">
+                    <div class="grid grid-cols-12 gap-4 min-h-[450px] my-3 overflow-hidden">
+                        <div class="left-column col-span-12 sm:col-span-6">
                             <img src="Image/IMG_1833_e4D7izG25kyS7EJq_jpg.jpg" alt=""
                                 style="width: 100%; height: 250px; object-fit: cover">
                             <h2 class="text-lg mt-2 font-bold hoverDiv underlineAndColor">Chúc mừng Ban Tuyên giáo Huyện
@@ -380,7 +463,7 @@
                                 huyện Thạch Hà (Hà Tĩnh) đã đến tặng hoa chúc mừng Ban Tuyên giáo Huyện ủy.</h3>
                             <p class="text-right text-slate-400 font-bold">- 01/08/2024 -</p>
                         </div>
-                        <div class="right-column col-span-6">
+                        <div class="right-column col-span-12 sm:col-span-6">
                             <div class="grid grid-cols-12 gap-4 mb-2">
                                 <div class="col-span-4">
                                     <img src="Image/453096766_7439413512824748_7069472343419988729_n_KPrWxeFYr0uq7I2n.jpg"
@@ -444,8 +527,8 @@
                     <div class="hr-header"></div>
 
                     <!-- Content-header -->
-                    <div class="grid grid-cols-12 gap-4 h-[450px] my-3 overflow-hidden">
-                        <div class="left-column col-span-6">
+                    <div class="grid grid-cols-12 gap-4 min-h-[450px] my-3 overflow-hidden">
+                        <div class="left-column col-span-12 sm:col-span-6">
                             <img src="Image/IMG_1833_e4D7izG25kyS7EJq_jpg.jpg" alt=""
                                 style="width: 100%; height: 250px; object-fit: cover">
                             <h2 class="text-lg mt-2 font-bold hoverDiv underlineAndColor">Chúc mừng Ban Tuyên giáo Huyện
@@ -455,7 +538,7 @@
                                 huyện Thạch Hà (Hà Tĩnh) đã đến tặng hoa chúc mừng Ban Tuyên giáo Huyện ủy.</h3>
                             <p class="text-right text-slate-400 font-bold">- 01/08/2024 -</p>
                         </div>
-                        <div class="right-column col-span-6">
+                        <div class="right-column col-span-12 sm:col-span-6">
                             <div class="grid grid-cols-12 gap-4 mb-2">
                                 <div class="col-span-4">
                                     <img src="Image/453096766_7439413512824748_7069472343419988729_n_KPrWxeFYr0uq7I2n.jpg"
@@ -516,8 +599,8 @@
                     <div class="hr-header"></div>
 
                     <!-- Content-header -->
-                    <div class="grid grid-cols-12 gap-4 h-[450px] my-3 overflow-hidden">
-                        <div class="left-column col-span-6">
+                    <div class="grid grid-cols-12 gap-4 min-h-[450px] my-3 overflow-hidden">
+                        <div class="left-column col-span-12 sm:col-span-6">
                             <img src="Image/IMG_1833_e4D7izG25kyS7EJq_jpg.jpg" alt=""
                                 style="width: 100%; height: 250px; object-fit: cover">
                             <h2 class="text-lg mt-2 font-bold hoverDiv underlineAndColor">Chúc mừng Ban Tuyên giáo Huyện
@@ -527,7 +610,7 @@
                                 huyện Thạch Hà (Hà Tĩnh) đã đến tặng hoa chúc mừng Ban Tuyên giáo Huyện ủy.</h3>
                             <p class="text-right text-slate-400 font-bold">- 01/08/2024 -</p>
                         </div>
-                        <div class="right-column col-span-6">
+                        <div class="right-column col-span-12 sm:col-span-6">
                             <div class="grid grid-cols-12 gap-4 mb-2">
                                 <div class="col-span-4">
                                     <img src="Image/453096766_7439413512824748_7069472343419988729_n_KPrWxeFYr0uq7I2n.jpg"
@@ -591,8 +674,8 @@
                     <div class="hr-header"></div>
 
                     <!-- Content-header -->
-                    <div class="grid grid-cols-12 gap-4 h-[450px] my-3 overflow-hidden">
-                        <div class="left-column col-span-6">
+                    <div class="grid grid-cols-12 gap-4 min-h-[450px] my-3 overflow-hidden">
+                        <div class="left-column col-span-12 sm:col-span-6">
                             <img src="Image/IMG_1833_e4D7izG25kyS7EJq_jpg.jpg" alt=""
                                 style="width: 100%; height: 250px; object-fit: cover">
                             <h2 class="text-lg mt-2 font-bold hoverDiv underlineAndColor">Chúc mừng Ban Tuyên giáo Huyện
@@ -602,7 +685,7 @@
                                 huyện Thạch Hà (Hà Tĩnh) đã đến tặng hoa chúc mừng Ban Tuyên giáo Huyện ủy.</h3>
                             <p class="text-right text-slate-400 font-bold">- 01/08/2024 -</p>
                         </div>
-                        <div class="right-column col-span-6">
+                        <div class="right-column col-span-12 sm:col-span-6">
                             <div class="grid grid-cols-12 gap-4 mb-2">
                                 <div class="col-span-4">
                                     <img src="Image/453096766_7439413512824748_7069472343419988729_n_KPrWxeFYr0uq7I2n.jpg"
@@ -663,8 +746,8 @@
                     <div class="hr-header"></div>
 
                     <!-- Content-header -->
-                    <div class="grid grid-cols-12 gap-4 h-[450px] my-3 overflow-hidden">
-                        <div class="left-column col-span-6">
+                    <div class="grid grid-cols-12 gap-4 min-h-[450px] my-3 overflow-hidden">
+                        <div class="left-column col-span-12 sm:col-span-6">
                             <img src="Image/IMG_1833_e4D7izG25kyS7EJq_jpg.jpg" alt=""
                                 style="width: 100%; height: 250px; object-fit: cover">
                             <h2 class="text-lg mt-2 font-bold hoverDiv underlineAndColor">Chúc mừng Ban Tuyên giáo Huyện
@@ -674,7 +757,7 @@
                                 huyện Thạch Hà (Hà Tĩnh) đã đến tặng hoa chúc mừng Ban Tuyên giáo Huyện ủy.</h3>
                             <p class="text-right text-slate-400 font-bold">- 01/08/2024 -</p>
                         </div>
-                        <div class="right-column col-span-6">
+                        <div class="right-column col-span-12 sm:col-span-6">
                             <div class="grid grid-cols-12 gap-4 mb-2">
                                 <div class="col-span-4">
                                     <img src="Image/453096766_7439413512824748_7069472343419988729_n_KPrWxeFYr0uq7I2n.jpg"
@@ -816,7 +899,7 @@
 
 
                 <!-- Column right -->
-                <div class="content-right col-span-4 ">
+                <div class="content-right col-span-12 sm:col-span-4">
                     <p id="dateTime" class="text-right text-red-500 text-lg"></p>
                     <!-- Notification -->
                     <div class="notification">
@@ -1416,18 +1499,18 @@
             <!-- Footer -->
             <div class="footer-full h-[270px] w-full">
                 <div class="icon-footer flex items-center">
-                    <i class="fa-solid fa-house text-white pl-4 px-2 py-2 hover:text-yellow-300"></i>
+                    <i class="fa-solid fa-house text-white pl-4 px-2 py-2 hover:text-yellow-300 text-sm"></i>
                     <p class="px-2 py-2 text-white">|</p>
-                    <p class="px-2 py-2 text-white hover:text-yellow-300">Sơ đồ trang</p>
+                    <p class="px-2 py-2 text-white hover:text-yellow-300 text-sm">Sơ đồ trang</p>
                     <p class="px-2 py-2 text-white">|</p>
-                    <p class="px-2 py-2 text-white hover:text-yellow-300">Hỏi đáp</p>
+                    <p class="px-2 py-2 text-white hover:text-yellow-300 text-sm">Hỏi đáp</p>
                     <p class="px-2 py-2 text-white">|</p>
-                    <p class="px-2 py-2 text-white hover:text-yellow-300">Liên hệ</p>
+                    <p class="px-2 py-2 text-white hover:text-yellow-300 text-sm">Liên hệ</p>
                     <p class="px-2 py-2 text-white">|</p>
                     <p class="px-2 py-2 text-white hover:text-yellow-300"><span><i
-                                class="fa-solid fa-lock text-xs mx-1"></i></span> Đăng nhập</p>
+                                class="fa-solid fa-lock text-xs mx-1 text-sm"></i></span> Đăng nhập</p>
                     <p class="px-2 py-2 text-white">|</p>
-                    <p class="px-2 py-2 text-white hover:text-yellow-300">RSS</p>
+                    <p class="px-2 py-2 text-white hover:text-yellow-300 text-sm">RSS</p>
                 </div>
                 <hr>
                 <div class="content-footer text-center">
@@ -1457,8 +1540,8 @@
             variableWidth: true,
             speed: 1000,
             slidesToShow: 3,
-            prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fas fa-arrow-left' aria-hidden='true'></i></button>",
-            nextArrow: "<button type='button' class='slick-next pull-right'><i class='fas fa-arrow-right' aria-hidden='true'></i></button>"
+            prevArrow: "<button type='button' class='slick-prev z-10 pull-left'><i class='fas fa-arrow-left' aria-hidden='true'></i></button>",
+            nextArrow: "<button type='button' class='slick-next z-10 pull-right'><i class='fas fa-arrow-right' aria-hidden='true'></i></button>"
         });
     </script>
 </body>
