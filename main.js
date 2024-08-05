@@ -112,8 +112,8 @@ scrollToTopBtn.onclick = function() {
 
 
 // Responsive
-const btnOpen = document.querySelector('.open-menu');
-const menu = document.querySelector('.nav-item-responsive');
+const btnOpen = document.querySelectorAll('.open-menu');
+const menu = document.querySelectorAll('.nav-item-responsive');
 
 btnOpen.onclick = () =>{
     menu.classList.toggle('hidden');
