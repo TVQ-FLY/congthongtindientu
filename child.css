@@ -63,10 +63,6 @@
     background-color: rgb(255, 255, 255);
 }
 
-/* .search-click{
-    top: 50px;
-    right:0px;
-} */
 
 /* Hover navbar responsive */
 .list-responsive:hover .bg-slate-300 {
@@ -78,132 +74,55 @@
     background-color: #c9c6c6;
 }
 
-/* Content */
-.box-header{
-    background-image: url(Image/sd_bordertop.png);
-}
 
-.header-content{
-    background-color: #0f69c3;
-}
+/* Column left */
 
-.header-content.active {
-    background-color: #20254f; /* Màu khi nút được chọn */
-    color: white; /* Màu chữ khi nút được chọn */
-}
-
-.bg-content{
-    left: 170px;
-    top: 0px;
-    bottom: 0px;
-    border-color: rgba(136, 183, 213, 0);
-    border-left: 26px solid #0f69c3;
-    border-width: 22px;
-    border-bottom: 0px solid transparent;
-    border-top: 36px solid transparent;
-    border-right: 0px solid rgba(255, 0, 0, 0);
-}
-
-.hr-header{
-    border-bottom: 1px solid #d71a21;
-}
-
-.full-music{
-    display: none;
-}
-
-/* Khởi tạo các div không có gạch chân và màu mặc định */
-.hoverDiv {
-    text-decoration: none;
-}
-
-/* Khi hover vào, chỉ thêm gạch chân */
-.underlineOnly.hovered {
-    text-decoration: underline;
-}
-
-/* Khi hover vào, thêm gạch chân và đổi màu chữ */
-.underlineAndColor.hovered {
-    text-decoration: underline;
-    color: blue; /* Màu chữ khi hover */
+.title-content-left{
+    width: max-content;
 }
 
 
-.left-column h3{
+.title-content-left{
+    position: relative;
+    background-color: #3498db;
+    color: white;
     font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    margin-bottom: 12px;
-}
-
-.right-content:hover, .active {
-    background-color: #ffffff;
-}
-
-.active {
-    color: rgb(255, 102, 0);
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 
-/* Slick  */
-
-.carousel img{
-    width: 225px;
-    height: 150px;
-}
-
-
-.slick-prev{
+.title-content-left::after{
+    content: '';
     position: absolute;
+    right: -12px;
     top: 50%;
-    left: 5px;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 15px solid #3498db;
     transform: translateY(-50%);
-    background-color: rgb(107, 107, 117);
-    color: #ffffff;
-    border-radius: 10%;
-    z-index: 999;
-    padding: 3px 10px;
 }
 
-.slick-next{
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    background-color: rgb(107, 107, 117);
-    color: #ffffff;
-    border-radius: 10%;
-    z-index: 999;
-    padding: 3px 10px;
+.text-container {
+    max-width: 67ch; /* Limit the number of characters per line */
+    line-height: 1.5;
+    white-space: nowrap; /* Prevents text from wrapping to the next line */
+    overflow: hidden; /* Hides the overflow text */
+    text-overflow: ellipsis; /* Adds the ellipsis (...) at the end of the text */
 }
 
-
-.text-slide{
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    height: 72px;
-    display: block;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+.icon-left{
+    border: 2px solid #c4c2c2;
 }
 
-.address a::before{
-    content: "\f192";
-    color: #fe7700;
-    font: normal normal normal 9px / 1 FontAwesome;
-    width: 10px;
-    height: 10px;
-    margin: 4px 10px 0px 0px;
+.icon-right{
+    border: 2px solid #c4c2c2;
 }
 
 /* Column right */
+
 
 .notification{
     background-position: center;
@@ -221,7 +140,6 @@
     margin: 6px 10px 6px 5px;
     text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.3);
 }
-
 
 
 /* Scrollbar */

@@ -121,3 +121,11 @@ btnOpen.onclick = () =>{
 btnSearch.onclick = () =>{
     search.classList.toggle('hidden');
 }
+
+
+// Giới hạn số chữ file Child html 
+document.addEventListener("DOMContentLoaded", () => {
+    const container = document.getElementById("text-container");
+    // Example of changing max-width dynamically
+    container.style.maxWidth = "100ch"; // For example, set a new limit
+});
