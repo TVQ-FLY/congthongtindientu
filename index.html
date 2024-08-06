@@ -113,11 +113,17 @@
                 </div>
                 <div class="icon-navbar flex">
                     <!-- Icon search -->
-                    <i class="fa-solid fa-magnifying-glass text-white bg-red-600 p-4 cursor-pointer h-[48px]"></i>
+                    <i class="icon-search fa-solid fa-magnifying-glass text-white bg-red-600 p-4 cursor-pointer h-[48px] relative"></i>
                     <!-- Icon list -->
                     <div class="bx bx-menu bg-red-600 ml-1 p-2 text-white text-3xl open-menu block lg:hidden h-[48px]"></div>
                 </div>
+                <div class="search-click hidden bg-cyan-900 absolute top-[50px] right-0 px-1">
+                    <input type="text" placeholder="Từ khóa tìm kiếm" class="bg-cyan-900">
+                    <a href=""><i class="fa-solid fa-magnifying-glass text-white p-2 cursor-pointer"></i></a>
+                </div>
             </div>
+
+
 
             <div class="nav-item-responsive absolute md:w-[850px] z-[999] bg-white w-full hidden">
                 <div class="list-responsive">

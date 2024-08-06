@@ -111,7 +111,13 @@ scrollToTopBtn.onclick = function() {
 // Responsive
 const btnOpen = document.querySelector('.open-menu');
 const menu = document.querySelector('.nav-item-responsive');
+const btnSearch = document.querySelector('.icon-search');
+const search = document.querySelector('.search-click');
 
 btnOpen.onclick = () =>{
     menu.classList.toggle('hidden');
+}
+
+btnSearch.onclick = () =>{
+    search.classList.toggle('hidden');
 }

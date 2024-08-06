@@ -63,6 +63,11 @@
     background-color: rgb(255, 255, 255);
 }
 
+/* .search-click{
+    top: 50px;
+    right:0px;
+} */
+
 /* Hover navbar responsive */
 .list-responsive:hover .bg-slate-300 {
     color: yellow; /* Đổi màu chữ của "Giới thiệu" thành màu đỏ khi hover */
