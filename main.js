@@ -1,5 +1,4 @@
 // Chuyen doi anh va noi dung cua Content-header khi hover
-
 const rightContents = document.querySelectorAll('.right-content');
 const mainImage = document.getElementById('main-image');
 const mainTitle = document.getElementById('main-title');
@@ -52,8 +51,6 @@ divElements.forEach((div) => {
         div.classList.remove('hovered');
     });
 });
-
-
 
 
 // Date time colum right 
@@ -112,8 +109,8 @@ scrollToTopBtn.onclick = function() {
 
 
 // Responsive
-const btnOpen = document.querySelectorAll('.open-menu');
-const menu = document.querySelectorAll('.nav-item-responsive');
+const btnOpen = document.querySelector('.open-menu');
+const menu = document.querySelector('.nav-item-responsive');
 
 btnOpen.onclick = () =>{
     menu.classList.toggle('hidden');
