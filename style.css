@@ -58,6 +58,10 @@
     z-index: 999;
 }
 
+.list li:hover a{
+    color: red;
+}
+
 .nav-item:hover .list{
     display: block;
     background-color: rgb(255, 255, 255);
