@@ -332,3 +332,34 @@ a.icon-marquee{
     right: 10px
 }
 
+
+
+/* ================ */
+/* view text  */
+
+.table-content{
+    border: 2px solid #e69962 ;
+    border-radius: 1%;
+}
+
+
+table, th, td {
+    border: 1px solid rgb(216, 209, 209);
+    border-collapse: collapse;
+}
+
+/* Scrollbar */
+.custom-scrollbar-table::-webkit-scrollbar {
+    width: 12px;
+    border: 1px solid #d5d5d5;
+}
+
+.custom-scrollbar-table::-webkit-scrollbar-track {
+    border-radius: 0;
+    background: #eeeeee;
+}
+
+.custom-scrollbar-table::-webkit-scrollbar-thumb {
+    border-radius: 0;
+    background: #c4c2c2;
+}
