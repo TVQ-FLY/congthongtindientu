@@ -109,6 +109,41 @@
     transform: translateY(-50%);
 }
 
+/* Content */
+.box-header{
+    background-image: url(Image/sd_bordertop.png);
+}
+
+.header-content{
+    background-color: #0f69c3;
+}
+
+.header-content.active {
+    background-color: #20254f; /* Màu khi nút được chọn */
+    color: white; /* Màu chữ khi nút được chọn */
+}
+
+
+.bg-content{
+    left: 170px;
+    top: 0px;
+    bottom: 0px;
+    border-color: rgba(136, 183, 213, 0);
+    border-left: 26px solid #0f69c3;
+    border-width: 22px;
+    border-bottom: 0px solid transparent;
+    border-top: 36px solid transparent;
+    border-right: 0px solid rgba(255, 0, 0, 0);
+}
+
+.hr-header{
+    border-bottom: 1px solid #d71a21;
+}
+
+.full-music{
+    display: none;
+}
+
 .text-container {
     max-width: 67ch; /* Limit the number of characters per line */
     line-height: 1.5;
