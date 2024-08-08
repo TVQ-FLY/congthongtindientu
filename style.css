@@ -67,18 +67,13 @@
     background-color: rgb(255, 255, 255);
 }
 
-/* .search-click{
-    top: 50px;
-    right:0px;
-} */
-
 /* Hover navbar responsive */
 .list-responsive:hover .bg-slate-300 {
-    color: yellow; /* Đổi màu chữ của "Giới thiệu" thành màu đỏ khi hover */
+    color: yellow;
 }
 
 .list-responsive li:hover {
-    color: red; /* Đổi nền của <li> thành màu vàng khi hover */
+    color: red;
     background-color: #c9c6c6;
 }
 
@@ -92,8 +87,8 @@
 }
 
 .header-content.active {
-    background-color: #20254f; /* Màu khi nút được chọn */
-    color: white; /* Màu chữ khi nút được chọn */
+    background-color: #20254f;
+    color: white;
 }
 
 .bg-content{
@@ -116,20 +111,19 @@
     display: none;
 }
 
-/* Khởi tạo các div không có gạch chân và màu mặc định */
 .hoverDiv {
     text-decoration: none;
 }
 
-/* Khi hover vào, chỉ thêm gạch chân */
+
 .underlineOnly.hovered {
     text-decoration: underline;
 }
 
-/* Khi hover vào, thêm gạch chân và đổi màu chữ */
+
 .underlineAndColor.hovered {
     text-decoration: underline;
-    color: blue; /* Màu chữ khi hover */
+    color: blue; 
 }
 
 
@@ -226,8 +220,6 @@
     text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.3);
 }
 
-
-
 /* Scrollbar */
 .custom-scrollbar::-webkit-scrollbar {
     width: 5px;
@@ -246,8 +238,8 @@
 
 /* Marquee */
 .marquee-container {
-    width: 100%; /* Độ rộng của container */
-    height: 200px; /* Độ cao của container */
+    width: 100%;
+    height: 200px; 
     overflow: hidden;
     position: relative;
     border: 1px solid #ccc;
@@ -255,21 +247,21 @@
 
 .marquee-content {
     position: absolute;
-    bottom: -100%; /* Bắt đầu từ ngoài khung nhìn */
-    animation: marquee 20s linear infinite; /* Thời gian chạy là 10 giây */
+    bottom: -100%;
+    animation: marquee 20s linear infinite;
 }
 
 .marquee-content:hover {
-    animation-play-state: paused; /* Dừng animation khi hover */
+    animation-play-state: paused;
     color: rgb(255, 128, 0);
 }
 
 @keyframes marquee {
     from {
-        bottom: -100%; /* Bắt đầu từ dưới khung nhìn */
+        bottom: -100%;
     }
     to {
-        bottom: 100%; /* Kết thúc ở trên khung nhìn */
+        bottom: 100%;
     }
 }
 
@@ -333,9 +325,95 @@ a.icon-marquee{
 }
 
 
+/* ================================================= */
 
-/* ================ */
-/* view text  */
+/* Css view child html  */
+/* Column left */
+
+.title-content-left{
+    width: max-content;
+}
+
+
+.title-content-left{
+    position: relative;
+    background-color: #3498db;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.title-content-left::after{
+    content: '';
+    position: absolute;
+    right: -12px;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 15px solid #3498db;
+    transform: translateY(-50%);
+}
+
+/* Content */
+.box-header{
+    background-image: url(Image/sd_bordertop.png);
+}
+
+.header-content{
+    background-color: #0f69c3;
+}
+
+.header-content.active {
+    background-color: #20254f;
+    color: white;
+}
+
+
+.bg-content{
+    left: 170px;
+    top: 0px;
+    bottom: 0px;
+    border-color: rgba(136, 183, 213, 0);
+    border-left: 26px solid #0f69c3;
+    border-width: 22px;
+    border-bottom: 0px solid transparent;
+    border-top: 36px solid transparent;
+    border-right: 0px solid rgba(255, 0, 0, 0);
+}
+
+.hr-header{
+    border-bottom: 1px solid #d71a21;
+}
+
+.full-music{
+    display: none;
+}
+
+.text-container {
+    max-width: 67ch; /* Limit the number of characters per line */
+    line-height: 1.5;
+    white-space: nowrap; /* Prevents text from wrapping to the next line */
+    overflow: hidden; /* Hides the overflow text */
+    text-overflow: ellipsis; /* Adds the ellipsis (...) at the end of the text */
+}
+
+.icon-left{
+    border: 2px solid #c4c2c2;
+}
+
+.icon-right{
+    border: 2px solid #c4c2c2;
+}
+
+
+
+
+/* ================================================== */
+/* css view text html  */
 
 .table-content{
     border: 2px solid #e69962 ;
