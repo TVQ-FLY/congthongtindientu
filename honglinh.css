@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.noiDung-full{
+    background-color: #eef1f5;
+}
+
+.noiDung-column-right{
+    background-color: #eef1f5;
+}
+
+
+/* View lichcongtac */
+.dropdown-list{
+    display: none;
+}
+
+.hover-pen:hover .dropdown-list{
+    display: block;
+}
+
+.modal {
+    background-color: rgba(0,0,0,0.4);
+}
+
+
